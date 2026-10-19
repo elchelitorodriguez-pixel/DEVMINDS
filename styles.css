@@ -1,0 +1,289 @@
+/* ==========================================================================
+   VARIABLES Y CONFIGURACIÓN BASE (DARK TECH THEME)
+   ========================================================================== */
+:root {
+    --bg-main: #0b0f19;
+    --bg-darker: #06090f;
+    --bg-card: #111827;
+    --neon-blue: #00f2fe;
+    --neon-green: #10b981;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Evita que el navbar fijo tape los títulos */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+}
+
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+.bg-darker {
+    background-color: var(--bg-darker);
+}
+
+.bg-card {
+    background-color: var(--bg-card);
+}
+
+.max-w-700 { max-width: 700px; }
+.max-w-500 { max-width: 500px; }
+.fw-extrabold { font-weight: 800; }
+
+/* ==========================================================================
+   COLORES Y ACENTOS NEÓN
+   ========================================================================== */
+.text-neon-blue { color: var(--neon-blue) !important; }
+.text-neon-green { color: var(--neon-green) !important; }
+
+.bg-neon-blue-subtle {
+    background-color: rgba(0, 242, 254, 0.1);
+}
+
+.bg-neon-green-subtle {
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   BOTONES PERSONALIZADOS
+   ========================================================================== */
+.btn-neon-blue {
+    background-color: var(--neon-blue);
+    color: #050811;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-neon-blue:hover {
+    background-color: #00d8e4;
+    color: #050811;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-neon-green {
+    background-color: var(--neon-green);
+    color: #050811;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-neon-green:hover {
+    background-color: #0ea572;
+    color: #050811;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-outline-neon {
+    color: var(--neon-blue);
+    border: 1px solid rgba(0, 242, 254, 0.4);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-neon:hover {
+    background-color: var(--neon-blue);
+    color: #050811;
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.custom-navbar {
+    background-color: rgba(11, 15, 25, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar.navbar-scrolled {
+    padding: 0.6rem 0;
+    background-color: rgba(6, 9, 15, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--neon-blue);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* Efectos de luz de fondo */
+.hero-glow-1 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(0, 242, 254, 0.12) 0%, rgba(0,0,0,0) 70%);
+    top: 10%;
+    left: -100px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-glow-2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, rgba(0,0,0,0) 70%);
+    bottom: 5%;
+    right: -100px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.code-window {
+    background-color: #0d1322;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.code-window .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   TARJETAS (FEATURES, PRODUCTOS Y EQUIPO)
+   ========================================================================== */
+.feature-card,
+.product-card,
+.team-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover,
+.product-card:hover,
+.team-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(0, 242, 254, 0.4) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 242, 254, 0.08);
+}
+
+.icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Portafolio */
+.product-img-wrapper {
+    height: 210px;
+    overflow: hidden;
+}
+
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img-wrapper img {
+    transform: scale(1.07);
+}
+
+.tech-badge {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #d1d5db;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+/* Equipo */
+.avatar-wrapper {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-neon:hover {
+    color: var(--neon-blue) !important;
+}
+
+/* ==========================================================================
+   FORMULARIO Y CONTACTO
+   ========================================================================== */
+.custom-input {
+    background-color: rgba(11, 15, 25, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--text-primary);
+    padding: 0.75rem 1rem;
+}
+
+.custom-input:focus {
+    background-color: #0b0f19;
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 0 0.25rem rgba(0, 242, 254, 0.15);
+    color: #fff;
+}
+
+.social-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--neon-blue);
+    color: #050811;
+    transform: translateY(-3px);
+}

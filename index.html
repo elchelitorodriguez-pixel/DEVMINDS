@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devminds | Innovación en Desarrollo de Software</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio">
+                    <i class="bi bi-cpu-fill text-neon-blue me-2 fs-3"></i>
+                    <span class="brand-text">DEV<span class="text-neon-green">MINDS</span></span>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipo">Equipo</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <a class="btn btn-neon-blue btn-sm px-4 py-2 fw-semibold" href="#contacto">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= 1. INTERFAZ DE INICIO (HERO & POR QUÉ ELEGIRNOS) ================= -->
+        <section id="inicio" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+            <div class="container position-relative z-1">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <div class="badge bg-dark-subtle border border-info-subtle text-neon-blue mb-3 px-3 py-2 rounded-pill font-mono">
+                            <i class="bi bi-terminal me-2"></i>Ingeniería de Software a Medida
+                        </div>
+                        <h1 class="display-3 fw-extrabold mb-4 lh-sm">
+                            Transformamos ideas complejas en <span class="text-gradient">Software de Alto Impacto</span>
+                        </h1>
+                        <p class="lead text-secondary mb-5 pe-lg-5">
+                            Desarrollamos ecosistemas digitales escalables, aplicaciones de escritorio robustas y plataformas web modernas diseñadas para optimizar y potenciar el crecimiento de tu negocio.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                            <a href="#portafolio" class="btn btn-neon-green btn-lg px-4 py-3 fw-bold d-flex align-items-center justify-content-center">
+                                Explorar Portafolio <i class="bi bi-arrow-right-short fs-4 ms-2"></i>
+                            </a>
+                            <a href="#contacto" class="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">
+                                Cotizar Proyecto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <!-- Ilustración de código / tarjeta tecnológica -->
+                        <div class="code-window shadow-lg rounded-4 p-4 border border-secondary border-opacity-25">
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="dot bg-danger"></span>
+                                <span class="dot bg-warning"></span>
+                                <span class="dot bg-success"></span>
+                            </div>
+                            <pre class="font-mono text-light mb-0"><code><span class="text-neon-blue">class</span> <span class="text-neon-green">SoftwareAgency</span> {
+  <span class="text-secondary">constructor</span>() {
+    <span class="text-info">this</span>.name = <span class="text-warning">"Devminds"</span>;
+    <span class="text-info">this</span>.stack = [<span class="text-warning">"C#"</span>, <span class="text-warning">"SQL Server"</span>, <span class="text-warning">"Python"</span>, <span class="text-warning">"JS"</span>];
+    <span class="text-info">this</span>.quality = <span class="text-neon-blue">100</span>;
+  }
+
+  <span class="text-neon-green">buildSolution</span>(clientNeeds) {
+    <span class="text-neon-blue">return</span> <span class="text-warning">`Solución escalable y segura`</span>;
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Por qué elegirnos -->
+        <section class="py-5 bg-darker border-top border-bottom border-secondary border-opacity-10">
+            <div class="container py-4">
+                <div class="text-center max-w-700 mx-auto mb-5">
+                    <h2 class="h6 text-neon-blue font-mono text-uppercase tracking-wide">Nuestra Propuesta de Valor</h2>
+                    <h3 class="fw-bold display-6">¿Por qué elegirnos como tu socio tecnológico?</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card p-4 rounded-4 h-100">
+                            <div class="icon-box bg-neon-blue-subtle text-neon-blue mb-3">
+                                <i class="bi bi-layers-half fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-bold">Arquitectura Escalable</h4>
+                            <p class="text-secondary small mb-0">Diseñamos bases de datos normalizadas y código modular preparado para crecer junto con el volumen de tus operaciones.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card p-4 rounded-4 h-100">
+                            <div class="icon-box bg-neon-green-subtle text-neon-green mb-3">
+                                <i class="bi bi-shield-lock-fill fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-bold">Seguridad e Integridad</h4>
+                            <p class="text-secondary small mb-0">Implementamos controles rigurosos de validación de datos, manejo de roles y protección de información crítica.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card p-4 rounded-4 h-100">
+                            <div class="icon-box bg-neon-blue-subtle text-neon-blue mb-3">
+                                <i class="bi bi-vector-pen fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-bold">Diseño UI/UX Intuitivo</h4>
+                            <p class="text-secondary small mb-0">Interfaces modernas centradas en el usuario que reducen la curva de aprendizaje y agilizan los flujos de trabajo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card p-4 rounded-4 h-100">
+                            <div class="icon-box bg-neon-green-subtle text-neon-green mb-3">
+                                <i class="bi bi-headset fs-3"></i>
+                            </div>
+                            <h4 class="h5 fw-bold">Soporte y Mantenimiento</h4>
+                            <p class="text-secondary small mb-0">Acompañamiento continuo post-implementación, actualizaciones preventivas y optimización constante de rendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 2. INTERFAZ DE PRODUCTOS / PORTAFOLIO ================= -->
+        <section id="portafolio" class="py-5 my-5">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                    <div>
+                        <span class="text-neon-green font-mono text-uppercase small"><i class="bi bi-code-slash me-1"></i> Nuestro Trabajo</span>
+                        <h2 class="display-5 fw-bold mt-1 mb-0">Portafolio de Productos</h2>
+                    </div>
+                    <p class="text-secondary mb-0 mt-3 mt-md-0 max-w-500">
+                        Soluciones reales probadas en entornos exigentes, desde aplicaciones de escritorio con Windows Forms hasta plataformas web interactivas.
+                    </p>
+                </div>
+
+                <!-- Grid de Productos -->
+                <div class="row g-4">
+                    
+                    <!-- Producto 2: Plataforma de Horas Sociales / Académica -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card product-card h-100 border-0 rounded-4 overflow-hidden">
+                            <div class="product-img-wrapper position-relative">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Plataforma Académica Mockup">
+                                <span class="badge bg-dark position-absolute top-0 end-0 m-3 border border-success text-neon-green">Plataforma Web</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="h4 card-title fw-bold">EasyTask - Gestión de Servicio Social</h3>
+                                <p class="card-text text-secondary small flex-grow-1">
+                                    Plataforma web administrativa para instituciones educativas que permite el seguimiento en tiempo real de horas de servicio social estudiantil, proyectos y validación de bitácoras.
+                                </p>
+                                <div class="tech-stack mb-4 d-flex flex-wrap gap-2">
+                                    <span class="badge tech-badge">HTML5 / CSS3</span>
+                                    <span class="badge tech-badge">JavaScript</span>
+                                    <span class="badge tech-badge">Bootstrap 5</span>
+                                    <span class="badge tech-badge">SQL Server</span>
+                                </div>
+                                <button class="btn btn-outline-neon w-100 mt-auto" 
+                                        data-bs-toggle="modal" 
+                                        data-bs-target="#productModal"
+                                        data-title="EasyTask - Gestión de Servicio Social"
+                                        data-category="Plataforma Web Administrativa"
+                                        data-desc="Solución en la nube con paneles de control (Dashboards) diferenciados para administradores, coordinadores y estudiantes. Automatiza el cálculo de horas acumuladas, aprobación de reportes y emisión de constancias."
+                                        data-tech="HTML5, CSS3, JavaScript, jQuery, Bootstrap 5, SQL Server">
+                                    Ver más detalles <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 3. INTERFAZ SOBRE NOSOTROS & EQUIPO ================= -->
+        <section id="nosotros" class="py-5 bg-darker border-top border-secondary border-opacity-10">
+            <div class="container py-5">
+                <!-- Historia, Misión y Visión -->
+                <div class="row align-items-center gy-5 mb-5 pb-4">
+                    <div class="col-lg-6">
+                        <span class="text-neon-blue font-mono text-uppercase small"><i class="bi bi-building me-1"></i> Nuestra Identidad</span>
+                        <h2 class="display-5 fw-bold mt-2 mb-4">Ingeniería apasionada por resolver problemas reales</h2>
+                        <p class="text-secondary mb-4">
+                            Nacimos de la iniciativa de cinco especialistas en desarrollo de software con una meta en común: cerrar la brecha entre las necesidades operativas de las empresas y la tecnología de vanguardia. Lo que comenzó como el desarrollo de proyectos académicos y prototipos funcionales, evolucionó rápidamente hacia una agencia estructurada capaz de entregar software robusto, limpio y escalable.
+                        </p>
+                        <p class="text-secondary mb-0">
+                            Combinamos metodologías ágiles, diseño centrado en el usuario y sólidas bases en ingeniería de datos para garantizar que cada línea de código aporte valor directo a nuestros clientes.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="p-4 rounded-4 bg-card border border-info border-opacity-25">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-rocket-takeoff-fill text-neon-blue fs-3 me-3"></i>
+                                        <h3 class="h4 fw-bold mb-0">Nuestra Misión</h3>
+                                    </div>
+                                    <p class="text-secondary small mb-0">
+                                       “Desarrollar y ofrecer soluciones de software innovadoras y accesibles que respondan a las necesidades de nuestros clientes, optimizando sus procesos y mejorando su experiencia mediante la tecnología.”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="p-4 rounded-4 bg-card border border-success border-opacity-25">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-eye-fill text-neon-green fs-3 me-3"></i>
+                                        <h3 class="h4 fw-bold mb-0">Nuestra Visión</h3>
+                                    </div>
+                                    <p class="text-secondary small mb-0">
+                                        "Ser una empresa referente en innovación tecnológica, reconocida por transformar la manera en que las personas y empresas utilizan la tecnología para crecer, mejorar y alcanzar sus objetivos."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección del Equipo (5 Integrantes) -->
+                <div id="equipo" class="pt-5">
+                    <div class="text-center max-w-700 mx-auto mb-5">
+                        <span class="text-neon-green font-mono text-uppercase small">El Talento Detrás del Código</span>
+                        <h3 class="display-6 fw-bold mt-1">Nuestro Equipo Principal</h3>
+                        <p class="text-secondary">Cinco mentes especializadas trabajando en sinergia para cubrir todo el ciclo de vida del desarrollo de software.</p>
+                    </div>
+
+                    <div class="row g-4 justify-content-center">
+                        <!-- Miembro 1: Liderazgo / Full-Stack -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="team-card p-4 rounded-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="avatar-wrapper mb-3">
+                                    <i class="bi bi-person-workspace display-4 text-neon-blue"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-1">Stivent Rodríguez</h4>
+                                <span class="badge bg-neon-blue-subtle text-neon-blue font-mono mb-3"></span>
+                                <p class="text-secondary small mb-4">
+                                Gerente general de la empresa
+                                </p>
+                                <div class="mt-auto d-flex gap-3">
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-linkedin fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Miembro 2: Mantenimiento -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="team-card p-4 rounded-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="avatar-wrapper mb-3">
+                                    <i class="bi bi-tools display-4 text-neon-green"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-1">Cristian Ramos</h4>
+                                <span class="badge bg-neon-green-subtle text-neon-green font-mono mb-3"></span>
+                                <p class="text-secondary small mb-4">
+                                   Encargado de mantenimiento 
+                                </p>
+                                <div class="mt-auto d-flex gap-3">
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-linkedin fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Miembro 3: Base de Datos -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="team-card p-4 rounded-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="avatar-wrapper mb-3">
+                                    <i class="bi bi-database-fill-gear display-4 text-neon-blue"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-1">Hillary Bachmann</h4>
+                                <span class="badge bg-neon-blue-subtle text-neon-blue font-mono mb-3"></span>
+                                <p class="text-secondary small mb-4">
+                                    Analista de TI 
+                                </p>
+                                <div class="mt-auto d-flex gap-3">
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-linkedin fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Miembro 4: Desarrollo Backend -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="team-card p-4 rounded-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="avatar-wrapper mb-3">
+                                    <i class="bi bi-hdd-network-fill display-4 text-neon-green"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-1">Brian Barriento</h4>
+                                <span class="badge bg-neon-green-subtle text-neon-green font-mono mb-3"></span>
+                                <p class="text-secondary small mb-4">
+                                    Programador senior 
+                                </p>
+                                <div class="mt-auto d-flex gap-3">
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-linkedin fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Miembro 5: Gestión de Proyectos -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="team-card p-4 rounded-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="avatar-wrapper mb-3">
+                                    <i class="bi bi-kanban-fill display-4 text-neon-blue"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-1">Darien Cartagena</h4>
+                                <span class="badge bg-neon-blue-subtle text-neon-blue font-mono mb-3"></span>
+                                <p class="text-secondary small mb-4">
+                                    Programador junior 
+                                </p>
+                                <div class="mt-auto d-flex gap-3">
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-github fs-5"></i></a>
+                                    <a href="#" class="text-secondary hover-neon"><i class="bi bi-linkedin fs-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 4. INTERFAZ DE CONTACTO ================= -->
+        <section id="contacto" class="py-5 my-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <!-- Información de Contacto -->
+                    <div class="col-lg-5">
+                        <span class="text-neon-blue font-mono text-uppercase small"><i class="bi bi-chat-dots me-1"></i> Hablemos de tu proyecto</span>
+                        <h2 class="display-5 fw-bold mt-2 mb-4">¿Listo para digitalizar tus ideas?</h2>
+                        <p class="text-secondary mb-5">
+                            Completa el formulario y nuestro equipo técnico analizará tus requerimientos para ofrecerte una propuesta a la medida.
+                        </p>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box bg-neon-blue-subtle text-neon-blue me-3 flex-shrink-0">
+                                <i class="bi bi-geo-alt-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="h6 fw-bold mb-1">Ubicación</h5>
+                                <p class="text-secondary small mb-0">El Salvador, Centroamérica (Atención presencial y remota)</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box bg-neon-green-subtle text-neon-green me-3 flex-shrink-0">
+                                <i class="bi bi-envelope-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="h6 fw-bold mb-1">Correo Electrónico</h5>
+                                <p class="text-secondary small mb-0"><a class="link-light" href="mailto:contacto@devminds.sv">contacto@devminds.sv</a> | <a class="link-light" href="mailto:proyectos@devminds.sv">proyectos@devminds.sv</a></p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-5">
+                            <div class="icon-box bg-neon-blue-subtle text-neon-blue me-3 flex-shrink-0">
+                                <i class="bi bi-telephone-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="h6 fw-bold mb-1">Teléfono / WhatsApp</h5>
+                                <p class="text-secondary small mb-0"><a class="link-light" href="tel:+50324000000">+503 2400-0000</a> / <a class="link-light" href="https://wa.me/50370000000" target="_blank" rel="noopener noreferrer">WhatsApp +503 7000-0000</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div>
+                            <h6 class="text-uppercase font-mono small text-secondary mb-3">Síguenos en redes</h6>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="social-btn"><i class="bi bi-github"></i></a>
+                                <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Contacto -->
+                    <div class="col-lg-7">
+                        <div class="p-4 p-md-5 rounded-4 bg-card border border-secondary border-opacity-25 shadow-lg">
+                            <h3 class="h4 fw-bold mb-4">Envíanos un mensaje</h3>
+                            
+                            <!-- Alerta de éxito (oculta por defecto) -->
+                            <div id="formAlert" class="alert alert-success d-none align-items-center" role="alert">
+                                <i class="bi bi-check-circle-fill me-2 fs-5"></i>
+                                <div>
+                                    ¡Mensaje enviado con éxito! Nos pondremos en contacto contigo muy pronto.
+                                </div>
+                            </div>
+
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label small text-secondary">Nombre completo *</label>
+                                        <input type="text" class="form-control custom-input" id="nombre" placeholder="Ej. Juan Pérez" required>
+                                        <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="correo" class="form-label small text-secondary">Correo electrónico *</label>
+                                        <input type="email" class="form-control custom-input" id="correo" placeholder="nombre@empresa.com" required>
+                                        <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="asunto" class="form-label small text-secondary">Tipo de Proyecto / Asunto *</label>
+                                        <select class="form-select custom-input" id="asunto" required>
+                                            <option value="" selected disabled>Selecciona una opción...</option>
+                                            <option value="desktop">Aplicación de Escritorio (C# / Python)</option>
+                                            <option value="web">Plataforma o Sitio Web</option>
+                                            <option value="db">Diseño / Optimización de Base de Datos</option>
+                                            <option value="mantenimiento">Mantenimiento de Software</option>
+                                            <option value="otro">Otro requerimiento</option>
+                                        </select>
+                                        <div class="invalid-feedback">Por favor, selecciona un asunto.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="mensaje" class="form-label small text-secondary">Detalles del proyecto *</label>
+                                        <textarea class="form-control custom-input" id="mensaje" rows="4" placeholder="Cuéntanos brevemente sobre tu idea o necesidad..." required minlength="10"></textarea>
+                                        <div class="invalid-feedback">Por favor, escribe un mensaje de al menos 10 caracteres.</div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-neon-blue w-100 py-3 fw-bold">
+                                            Enviar Mensaje <i class="bi bi-send-fill ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-4 bg-darker border-top border-secondary border-opacity-25 text-center text-secondary small">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="mb-2 mb-md-0">
+                <span class="fw-bold text-light">DEV<span class="text-neon-green">MINDS</span></span> &copy; 2026. Todos los derechos reservados.
+            </div>
+            <div>
+                Diseñado y desarrollado con <i class="bi bi-heart-fill text-danger mx-1"></i> y código limpio.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= MODAL DE DETALLES DEL PRODUCTO ================= -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-card border border-info border-opacity-50 rounded-4">
+                <div class="modal-header border-bottom border-secondary border-opacity-25">
+                    <div>
+                        <span id="modalCategory" class="badge bg-neon-blue-subtle text-neon-blue font-mono mb-1">Categoría</span>
+                        <h5 class="modal-title fw-bold" id="productModalLabel">Título del Producto</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6 class="text-uppercase font-mono small text-secondary mb-2">Descripción General</h6>
+                    <p id="modalDesc" class="text-light small mb-4">Descripción detallada del producto...</p>
+                    
+                    <h6 class="text-uppercase font-mono small text-secondary mb-2">Stack Tecnológico</h6>
+                    <p id="modalTech" class="text-neon-green font-mono small mb-0">Tecnologías...</p>
+                </div>
+                <div class="modal-footer border-top border-secondary border-opacity-25">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="#contacto" class="btn btn-neon-blue btn-sm" id="modalQuoteBtn">Solicitar Demo / Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
